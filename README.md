@@ -1,2 +1,2 @@
 # Landing-Page
- This is a showcase of some of the pages that I was interested in building
+ This is a showcase of some of the webpages that I've been interested in building.
