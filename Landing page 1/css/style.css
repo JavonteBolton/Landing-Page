@@ -2,6 +2,11 @@ body {
     height: 100vh;
     margin: auto;
     padding: 0px;
+    background: linear-gradient(70deg, black, white);
+    position: relative;
+    box-sizing: border-box;
+    background-size: cover;
+
 }
 section {
     position: relative;
@@ -21,6 +26,8 @@ section img {
     height: 100%;
     object-fit: cover;
     display: flex;
+    border: solid 5px black;
+    background-attachment: fixed;
 }
 
 #parallax-header {
@@ -29,8 +36,8 @@ section img {
     font-size: 7em;
     z-index: 1;
     display: flex;
-    border: 5px solid rgba(255, 255, 255, .6);
     margin-top: 15px;
+    
 }
 
 .ui-header {
@@ -64,30 +71,61 @@ a:hover {
     flex-direction: column;
     display: flex;
 }
+.content2{
+    margin-top: 12px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2card{
+    color: black;
+    margin-top: 50px;
+    border: solid 5px black;
+}
+.left-content {
+    background: yellow;
+    padding: 12px;
+}
+.right-content {
+    color:  white;
+    margin-right: 60px;
+    background: black;
+    padding: 12px;
+}
+
 .text {
     font-weight: 500;
-    color: #aa00ff;
+    color: #eee;
     text-align: center;
-    
+    margin-top: 5px;
 }
 .card {
-    background: lightblue;
-    margin: auto;
-    width: 300px;
+    background: linear-gradient(390deg, black, white, transparent);
     padding: 5px;
     color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .title {
-    background: purple;
+    background: black;
     margin: 5px;
+    border: solid 5px;
 }
 .email {
-    background: purple;
+    background: black;
     padding: 8px;
     margin: 5px;
+    border: solid 5px;
 }
 .phone {
-    background: purple;
+    background: black;
     padding: 8px;
     margin: 5px;
+    border: solid 5px;
 }
