@@ -6,7 +6,11 @@ body {
     position: relative;
     box-sizing: border-box;
     background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+header{
+    border: solid 4px black;
 }
 section {
     position: relative;
@@ -26,7 +30,6 @@ section img {
     height: 100%;
     object-fit: cover;
     display: flex;
-    border: solid 5px black;
     background-attachment: fixed;
 }
 
@@ -41,8 +44,10 @@ section img {
 }
 
 .ui-header {
-    background: #eee;
     display: flex;
+    margin: auto;
+    padding: 7px;
+    background: linear-gradient(30deg black, white);
 }
 
 .unordered-list {
@@ -51,16 +56,19 @@ section img {
     margin: 0;
     width: 0;
     gap: 16px;
-    color: #717171;
+}
+
+li {
+    padding: 8px;
 }
 a {
     text-decoration: none;
-    color: #717171;
+    color: #c3bebe;
 }
 
 a:hover {
-    background-color: #0000ff;
-    color: #eee;
+    background-color: gold;
+    color: black;
 }
 
 
@@ -115,17 +123,17 @@ a:hover {
 .title {
     background: black;
     margin: 5px;
-    border: solid 5px;
+    border: solid 5px slategray;
 }
 .email {
     background: black;
     padding: 8px;
     margin: 5px;
-    border: solid 5px;
+    border: solid 5px slategray;
 }
 .phone {
     background: black;
     padding: 8px;
     margin: 5px;
-    border: solid 5px;
+    border: solid 5px slategray;
 }
