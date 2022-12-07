@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 2160px;
+    width: 100%;
+    background-image: url(../../../../../Downloads/enk.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 90px;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 40px;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0,15);
+    margin-bottom: 20px;
+    
+    
+}
+@media screen and (max-width: 2100px) {
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: greenyellow;
+ }
+}
+nav{
+    flex: 1;
+    padding: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.content p{
+    font-size: 20px;
+    padding-top: 25px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+}
+
+@media screen and (min-width: 480px) {
+.why {
+    margin-top: 29px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+ }
+}
+.container{
+    max-width: 100%;
+    margin: -75px auto;
+    font-size: 24px;
+    padding: 7px;
+}
+.parallax{
+    background-image: url(Seattle.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    color: darkgreen;
+    text-align: center;
+}
+.dreams{
+    color: rgb(224, 224, 224);
+    text-align: center;
+
+
+}
+header{
+    font-size: 32px;
+    margin-top: 82px;
+    padding: 80px;
+    padding-left: 110px;
+}
+.naturetrail img{
+    color: green;
+    width: 400px;
+    height: 720px;
+    margin: auto;
+    position: relative;
+}
+.whitebackground{
+    color: blue;
+    background-color: rgb(243, 0, 0);
+
+}
+.logos{
+    height: 50px;
+    width: 100px;
+    z-index: 2;
+    position:relative;
+}
+
+.logos li{
+    list-style: none;
+    padding: 15px;
+}
+.media ul li{
+list-style: none;
+margin: 10px 0px;
+
+
+}
+.enklogo{
+    height: 29%;
+    position: absolute;
+    bottom: 0;
+    right: 43px;
+    margin-bottom: 28%;
+}
+.media ul li:hover {
+    color: white;
+    border: 1px solid green;
+    transition: .5s;
+    border-radius: 100px;
+}
+.intro {
+    background: white;
+    margin: auto;
+    display: flex;
+}

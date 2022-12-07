@@ -7,40 +7,11 @@ body {
     box-sizing: border-box;
     background-size: cover;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    flex-direction: column;
 }
-header{
-    border: solid 4px black;
-}
-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: flex;
-    background-attachment: fixed;
-}
-
-#parallax-header {
-    position: relative;
-    color:  white;
-    font-size: 7em;
-    z-index: 1;
-    display: flex;
-    margin-top: 15px;
-    
+@font-face {
+    font-family: "sovana";
+    src: url(../fonts/sovana-regular.ttf);
 }
 
 .ui-header {
@@ -61,6 +32,7 @@ section img {
 li {
     padding: 8px;
 }
+
 a {
     text-decoration: none;
     color: #c3bebe;
@@ -71,6 +43,34 @@ a:hover {
     color: black;
 }
 
+header{
+    border: solid 4px black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-attachment: fixed;
+    background-image: url(../images/the\ journey.jpg);
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.welcome-all {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+  
+.parallax-header {
+    position: relative;
+    color:  white;
+    font-size: 7em;
+    display: flex;
+    margin-top: 15px;
+    
+}
 
 .content {
     align-items: center;
@@ -79,6 +79,7 @@ a:hover {
     flex-direction: column;
     display: flex;
 }
+
 .content2{
     margin-top: 12px;
     display: flex;
@@ -93,10 +94,12 @@ a:hover {
     margin-top: 50px;
     border: solid 5px black;
 }
+
 .left-content {
     background: yellow;
     padding: 12px;
 }
+
 .right-content {
     color:  white;
     margin-right: 60px;
@@ -110,6 +113,7 @@ a:hover {
     text-align: center;
     margin-top: 5px;
 }
+
 .card {
     background: linear-gradient(390deg, black, white, transparent);
     padding: 5px;
@@ -120,20 +124,78 @@ a:hover {
     align-items: center;
     
 }
+
 .title {
     background: black;
     margin: 5px;
-    border: solid 5px slategray;
+    border: solid 2px slategray;
+    padding: 7px;
 }
+
 .email {
     background: black;
-    padding: 8px;
+    padding: 7px;
     margin: 5px;
-    border: solid 5px slategray;
+    border: solid 2px slategray;
 }
+
 .phone {
     background: black;
-    padding: 8px;
+    padding: 7px;
     margin: 5px;
-    border: solid 5px slategray;
+    border: solid 2px slategray;
+}
+
+.content3 {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 10px;
+    background-image: url(../images/everyroad.jpg);
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    border: solid 5px whitesmoke;
+    font-family: "sovana";
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+    padding: 5rem;
+    display: flex;
+    margin: 0 auto;
+
+}
+.intro {
+    padding: 5px;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.journey {
+    padding: 10px;
+    background: slategray;
+    margin: 5px;
+}
+.goal {
+    padding: 10px;
+    background: slategray;
+    margin: 5px;
+}
+
+.tech {
+    padding: 10px;
+    background-color: slategray;
+    margin: 5px;
 }
