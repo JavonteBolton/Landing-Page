@@ -17,6 +17,18 @@
   }
 
   .sidebar a.active {
-    background-color: #04AA6D;
+    background-color: #000000;
     color: white;
   }
+
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
