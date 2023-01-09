@@ -1,11 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 140px;
     background-color: #f1f1f1;
     position: fixed;
     height:100%;
-    overflow: auto;
+    overflow-x: hidden;
 
 }
 
@@ -26,9 +32,39 @@
     color: white;
   }
 
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
+  .heading {
+    text-align: center;
+    padding-top: 25px;
+    background-color: yellow;
+  }
+  .heading p {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    font-size: 16pt;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px 30px 20px;
+    
+  }
+  .content {
+    padding: 30px;
+    margin-left: 160px;
+
+  }
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
   }
   
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
