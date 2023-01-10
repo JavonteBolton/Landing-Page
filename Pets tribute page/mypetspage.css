@@ -46,6 +46,12 @@
     padding: 30px 30px 20px;
     
   }
+  .img {
+    display: flex;
+    padding: 30px;
+    margin: auto;
+  }
+
   .dog {
       height: 400px;
       width: fit-content;
@@ -54,7 +60,18 @@
       display: flex;
       border: solid 20px black;
       overflow: hidden;
-      transform: rotate(45deg);
+      transform: rotate(-4deg);
+      position: relative;
+  
+  }
+  .tired-doggo {
+    width: fit-content;
+    margin: auto;
+    border: 20px solid black;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
   }
   .content {
     padding: 60px;
