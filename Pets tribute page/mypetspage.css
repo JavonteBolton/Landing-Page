@@ -45,6 +45,8 @@ body {
     max-width: 100%;
     background-color: yellow;
   }
+  /*media query gets rid of the yellow background-color in the heading at the top of the page on smaller screens, still have to figure
+    out why the page wont render correctly on tablet sized screens such as ipad or similar sized screens.*/
   @media screen and (max-width: 1024px) {   .heading { background-color: lightblue; } }
 
   .heading p {
@@ -114,4 +116,11 @@ body {
       text-align: center;
       float: none;
     }
+  }
+  .tribute-heading {
+    margin-top: 15px;
+  }
+  .tribute-body {
+    padding: 10px;
+  
   }
