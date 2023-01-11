@@ -38,12 +38,15 @@ body {
     color: white;
   }
 
+  
   .heading {
     text-align: center;
     padding-top: 25px;
-    background-color: lightblue;
     max-width: 100%;
+    background-color: yellow;
   }
+  @media screen and (max-width: 1024px) {   .heading { background-color: lightblue; } }
+
   .heading p {
     color: rgba(0, 0, 0, 0.5);
     padding: 15px;
