@@ -4,6 +4,12 @@
     box-sizing: border-box;
     
 }
+body {
+  background: lightblue;
+  max-width: 100%;
+  max-height: auto;
+  
+}
 .sidebar {
     margin: 0;
     padding: 0;
@@ -35,7 +41,8 @@
   .heading {
     text-align: center;
     padding-top: 25px;
-    background-color: yellow;
+    background-color: lightblue;
+    max-width: 100%;
   }
   .heading p {
     color: rgba(0, 0, 0, 0.5);
@@ -46,15 +53,17 @@
     padding: 30px 30px 20px;
     
   }
-  .img {
+  .img1 {
     display: flex;
-    padding: 30px;
-    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .dog {
-      height: 400px;
-      width: fit-content;
+      height: 260px;
+      width: auto;
       margin: auto;
       object-fit: cover;
       display: flex;
