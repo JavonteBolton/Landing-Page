@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: rgba(197, 197, 197, 0.281);
+    display: flex;
+    align-items: baseline;
+    padding: 1rem;
+    gap: 2rem;
+    opacity: 1;
+    
+}
+
+.link {
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 15px;
+    font-family:Verdana, 'Geneva', Tahoma, sans-serif;
+    font-size: inherit;
+    cursor: pointer;
+    padding: .75rem;
+    
+}
+
+.dropdown.active > .link,
+.link:hover,a  {
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.098);
+    border-radius: 15px;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    padding: 2rem;
+    border-radius: .30rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.299);
+    opacity: 0;
+    translate: translateY(-10px);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    pointer-events: none;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.441);
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/*background*/
+.content  {
+ text-align: center;
+ overflow-y: hidden;
+}
+
+.content h1 {
+    font-size: 160px;
+    color: rgba(255, 255, 255, 0.584);
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.content h1:hover {
+    transition: 2s;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 2px;
+    color: rgba(255, 255, 255, 0.034);
+    
+    
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background: rgba(128, 128, 128, 0.292);
+}
+
+.home-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .home-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .home-video{
+        width: auto;
+        height: 100%;
+    }
+}
